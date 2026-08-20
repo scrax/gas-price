@@ -25,6 +25,7 @@ jobs:
       run: |
         python3 fr.py -o out/fr
         python3 es.py -o out/es
+        python3 it.py -o out/it
         cp -r docs/* out/
         echo "## fr" >> out/README.md
         echo "" >> out/README.md
@@ -35,6 +36,11 @@ jobs:
         echo "" >> out/README.md
         for f in `ls -1 out/es`; do
           echo "* [$f](es/$f)" >> out/README.md
+        done
+        echo "## it" >> out/README.md
+        echo "" >> out/README.md
+        for f it `ls -1 out/it`; do
+          echo "* [$f](it/$f)" >> out/README.md
         done
         echo out/README.md
 

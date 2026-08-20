@@ -14,3 +14,5 @@ Scripts to execute are named after the country they are handling the data from.
  [0]: https://organicmaps.app 
  [1]: http://www.prix-carburants.economie.gouv.fr/
  [2]: https://www.data.gouv.fr/fr/faq/
+
+test

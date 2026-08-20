@@ -261,7 +261,7 @@ def parse_mimit_gpx_multi(price_reader, impianti, out_dir):
 def main(file_in, out, fmt):
 
     # Se il formato non è stato passato da CLI, chiedi interattivamente
-    fmt = gpx-multi
+    fmt = "gpx-multi"
     if fmt is None:
         fmt = click.prompt(
             "Formato di output",

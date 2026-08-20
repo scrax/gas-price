@@ -39,7 +39,7 @@ jobs:
         done
         echo "## it" >> out/README.md
         echo "" >> out/README.md
-        for f it `ls -1 out/it`; do
+        for f in `ls -1 out/it`; do
           echo "* [$f](it/$f)" >> out/README.md
         done
         echo out/README.md

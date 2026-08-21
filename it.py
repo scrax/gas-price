@@ -250,7 +250,7 @@ def parse_mimit_gpx_multi(price_reader, impianti, out_dir):
 @click.command()
 @click.option("-i", "file_in",  default=None, help="File CSV locale dei prezzi (es. prezzo_alle_8.csv)")
 @click.option("-o", "out",      default=".",  help="Directory di output")
-@click.option("-f", "fmt",      default=None,
+@click.option("-f", "fmt",      default="kml",
               type=click.Choice(["kml", "gpx", "gpx-multi"], case_sensitive=False),
               help=(
                   "Formato di output:\n"
@@ -261,7 +261,7 @@ def parse_mimit_gpx_multi(price_reader, impianti, out_dir):
 def main(file_in, out, fmt):
 
     # Se il formato non è stato passato da CLI, chiedi interattivamente
-    fmt = "gpx-multi"
+    #fmt = "gpx-multi"
     if fmt is None:
         fmt = click.prompt(
             "Formato di output",

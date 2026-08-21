@@ -8,11 +8,11 @@ Create KML files for use with [Organic Maps][0] from open gas prices data.
 
 For France, the data are coming from [prix-carburant-economie.gouv.fr][1].
 These data are open source, see the [FAQ here][2].
+For Italy all code is copied from [Gh0stz0x] fork of original repo.
 
 Scripts to execute are named after the country they are handling the data from.
 
  [0]: https://organicmaps.app 
  [1]: http://www.prix-carburants.economie.gouv.fr/
  [2]: https://www.data.gouv.fr/fr/faq/
-
-test
+ [3]: https://github.com/Gh0stz0x/gas-price
